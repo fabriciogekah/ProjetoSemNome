@@ -1,7 +1,5 @@
-.header{
-    background-color: beige;
-    text-align: center;
-    padding: 3px;
+body {
+    background-image: url(background-white.png);
 }
 
 .row{
