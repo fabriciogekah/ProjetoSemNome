@@ -1,10 +1,12 @@
 body {
-    background-image: url(background-white.png);
+    background-color: whitesmoke;
 }
 
-.container{
+.container-fluid{
+    align-self: center;
     padding: 8px;
-    justify-content: center;
-    align-items: center;
-    position: relative;
+}
+
+form{
+    padding: 10px;
 }
