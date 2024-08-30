@@ -4,8 +4,9 @@ body {
 
 .row{
     display: flex;
-}
-
-.container{
-    
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    margin: 4px;
+    padding: 4px;
 }
