@@ -1,12 +1,27 @@
-body {
-    background-color: whitesmoke;
+body, html {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
 }
 
 .container-fluid{
     align-self: center;
-    padding: 8px;
+    background-image: url("background-black.png");
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
 }
 
 form{
     padding: 10px;
+}
+
+.col-md-4{
+    background-color: whitesmoke;
+}
+
+.col-md-4, .row{
+    height: 100%;
+    width: 102%;
+    overflow: hidden;
 }
