@@ -2,8 +2,9 @@
   "ExpandedNodes": [
     "",
     "\\actions",
-    "\\pages",
-    "\\php"
+    "\\js",
+    "\\pages"
   ],
+  "SelectedNode": "\\js\\registration.js",
   "PreviewInSolutionExplorer": false
 }

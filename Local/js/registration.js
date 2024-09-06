@@ -1,18 +1,9 @@
 // Created and tested by: Russo - Valdeijr
-
-// animate
-$('#password').focusin(function(){
-    $('form').addClass('up')
-  });
-  $('#password').focusout(function(){
-    $('form').removeClass('up')
-});
-
   
 // validation
 $('.btn').click(function(){
-$('form').addClass('wrong-entry');
+$('form').addClass('alert');
     setTimeout(function(){
-        $('form').removeClass('wrong-entry');
+        $('form').removeClass('alert');
     },3000 );
 });
