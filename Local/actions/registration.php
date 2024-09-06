@@ -1,9 +1,9 @@
 <?php
 // Created and tested by: Russo - Valdeijr
-$host = " "; #ip do host
-$user = " "; #user bd
-$passwd = " "; #senha bd
-$banco = " "; #nome bd
+$host = "localhost"; 
+$user = "site";
+$passwd = "b-_m-fK*Nq(z.SzF"; 
+$banco = "housefy"; 
 $link = mysqli_connect($host, $user, $passwd);
 if (!$link) {
     die('Não conectado : ' . mysql_error());
@@ -26,8 +26,8 @@ $address=$_POST['address'];
 $cep=$_POST['cep'];
 $city=$_POST['city'];
 $uf=$_POST['uf'];
-$sql = mysqli_query($link, "INSERT INTO usuarios(email, senha, nome, cpf, endereco, cep, cidade, uf) VALUES('$email', '$password', '$nome', '$cpf', '$address', '$cep', '$city', '$uf')");
-echo "<center>Cadastro efetuado com sucesso!</center><meta http-equiv='refresh' content='1;URL=#'>";
+$sql = mysqli_query($link, "INSERT INTO users(email, passwd, name, id, address, postal, city, uf) VALUES('$email', '$password', '$nome', '$cpf', '$address', '$cep', '$city', '$uf')");
+echo "<center>Cadastro efetuado com sucesso!</center><meta http-equiv='refresh' content='1;URL=../pages/registration'>";
 $link->close();
 ?>
 </body>
