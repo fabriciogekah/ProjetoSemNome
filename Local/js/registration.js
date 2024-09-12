@@ -7,12 +7,11 @@ $('#password').focusIn(function(){
   $('#password').focusout(function(){
     $('form').removeClass('up')
 });
-
   
 // validation
 $('.btn').click(function(){
-$('form').addClass('wrong-entry');
+$('form').addClass('alert');
     setTimeout(function(){
-        $('form').removeClass('wrong-entry');
+        $('form').removeClass('alert');
     },3000 );
 });
