@@ -1,7 +1,7 @@
 // Created and tested by: Russo - Valdeijr
 
 // animate
-$('#password').focusin(function(){
+$('#password').focusIn(function(){
     $('form').addClass('up')
   });
   $('#password').focusout(function(){
