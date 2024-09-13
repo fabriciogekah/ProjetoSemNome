@@ -34,3 +34,11 @@ function closeMenu() {
     menu.classList.remove('active');
   });
 }
+
+document.getElementById("function-buttons").style.display ="none";
+
+function openButtons() {
+  document.getElementById("function-buttons").style.display ="block";
+}
+
+document.getElementById('btn').addEventListener('click', openButtons);
