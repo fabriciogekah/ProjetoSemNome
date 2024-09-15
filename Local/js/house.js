@@ -38,7 +38,13 @@ function closeMenu() {
 document.getElementById("function-buttons").style.display ="none";
 
 function openButtons() {
-  document.getElementById("function-buttons").style.display ="block";
+  var openDiv = document.getElementById("function-buttons");
+
+  if(openDiv.style.display === "none") {
+    openDiv.style.display = "block";
+  } else {
+    openDiv.style.display = "none";
+  }
 }
 
 document.getElementById('btn').addEventListener('click', openButtons);
