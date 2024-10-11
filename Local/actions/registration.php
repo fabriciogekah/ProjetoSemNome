@@ -28,8 +28,8 @@ $cep=$_POST['cep'];
 $city=$_POST['city'];
 $uf=$_POST['uf'];
 
-$passwd = hash_hmac("sha256", $password, $keyword);
-$passwd_hashed = password_hash($passwd, PASSWORD_ARGON2ID);
+#$passwd = hash_hmac("sha256", $password, $keyword);
+#$passwd_hashed = password_hash($passwd, PASSWORD_ARGON2ID);
 
 #$sql = mysqli_query($link, "INSERT INTO users(email, passwd, name, id, address, postal, city, uf) VALUES('$email', '$passwd_hashed', '$nome', '$cpf', '$address', '$cep', '$city', '$uf')");
 echo "<center>Cadastro efetuado com sucesso!</center><meta http-equiv='refresh' content='10;URL=../pages/registration'>";

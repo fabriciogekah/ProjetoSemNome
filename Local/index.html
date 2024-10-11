@@ -22,19 +22,19 @@
         <div class="container-fluid">
             <div class="row">
                 <div class="col-md-4 ml-auto">
-                    <form>
-                        <h2>Login</h2>
+                    <h1>Login</h1>
+                    <form method="post" action="actions/login.php">
                         <div class="form-group">
-                            <input type="InputEmail" placeholder="E-mail" class="form-control" id="input-email" aria-describedby="emailHelp">                        <small id="emailHelp" class="form-text text-muted"></small>
+                            <input name="email" type="InputEmail" placeholder="E-mail" class="form-control" id="input-email" aria-describedby="emailHelp">                        <small id="emailHelp" class="form-text text-muted"></small>
                         </div>
                         <div class="form-group">
-                            <input type="password" placeholder="Senha" class="form-control" id="input-password">
+                            <input name="passwd" type="password" placeholder="Senha" class="form-control" id="input-password">
                         </div>
                         <div class="form-group form-check">
                             <input type="checkbox" class="form-check-input" id="check-box1">
                             <label class="form-check-label" for="check-box1">Aceito a venda dos meus orgãos.</label>
                         </div>
-                        <button type="button" class="btn btn-outline-info btn-block">Entrar</button>
+                        <button type="submit" class="btn btn-outline-info btn-block">Entrar</button>
                         <a href="pages/registration.html">Não tem uma conta? Cadastre-se!</a>
                     </form>
                 </div>
